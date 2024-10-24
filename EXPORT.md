@@ -1,2 +1,2 @@
 ## pzsf
-![](photograph/1p.png)
+![](./photograph/1p.png)
