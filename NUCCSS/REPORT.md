@@ -508,6 +508,22 @@ typedef union type
 
 ```
 
+#### ***编译与性能测试***  
+1.编写测试脚本(遍历所有gcc优化可选项目)
+![](photograph/p15.png)  
+![](photograph/p16.png)  
+
+2.记录各优化等级下的排序算法性能表现（执行时间）
+1)bubble **(注 bubble排序性能过差，懒得等测试运行结束了（也可能是卡死了）我只测试了10000组数据)**  
+![](photograph/p17.png)
+2)heap **(1000000)**  
+![](photograph/p18.png)  
+3)fib_heap  
+![](photograph/p19.png)  
+
+
+
+
 
 
 
