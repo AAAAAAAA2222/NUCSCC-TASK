@@ -48,7 +48,43 @@
 * PC，Windows11，VMware，Ubuntu22.04，vscode
    
 ### 五、**实验步骤**  
+##正式开始
 #### 一、实验环境搭建  
-1.下载VMware和ubuntu 系统镜像 
+1.下载VMware和ubuntu 系统镜像  
+![](./photograph/p4.png)  
+![](./photograph/p3.png)  
+
+2.配置ubuntu  
+![](./photograph/p9.png)  
+![](./photograph/p8.png)
+
+3.配置gcc  
+![](./photograph/p7.png)  
+
+4.在Firefox中官网下载vscode  
+![](./photograph/p6.png)
+
+5.在vscode中搭建编译c语言环境  
+  1)配置task.json
+![](./photograph/p13.png)  
+![](./photograph/p14.png)  
+
+  2）配置launch.json
+![](./photograph/p11.png)
+![](./photograph/p10.png)
+  
+#### 二、实现排序算法  
+1.**冒泡排序**    
+
+
+2.**基础堆排序**  
+
+
+3.**Fibonacci堆排序**  
+
+
+
+
+
 
 
