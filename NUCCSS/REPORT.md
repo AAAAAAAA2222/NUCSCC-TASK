@@ -1,6 +1,7 @@
 # ***C***ounter ***S***trike      ~~实验报告~~  
 撰写人：HLW
-***
+Q：834295215
+*** 
 ### 一、实验项目名称 
 
 ​        c语言排序算法优化
@@ -48,7 +49,7 @@
 * PC，Windows11，VMware，Ubuntu22.04，vscode
    
 ### 五、**实验步骤**  
-##正式开始
+##  正式开始
 #### 实验环境搭建  
 1.下载VMware和ubuntu 系统镜像  
 ![](./photograph/p4.png)  
