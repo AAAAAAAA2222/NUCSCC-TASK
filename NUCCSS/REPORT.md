@@ -49,7 +49,7 @@
    
 ### 五、**实验步骤**  
 ##正式开始
-#### 一、实验环境搭建  
+#### 实验环境搭建  
 1.下载VMware和ubuntu 系统镜像  
 ![](./photograph/p4.png)  
 ![](./photograph/p3.png)  
@@ -73,7 +73,7 @@
 ![](./photograph/p11.png)
 ![](./photograph/p10.png)
   
-#### 二、实现排序算法  
+#### 实现排序算法  
 1.**冒泡排序**    
 ```c
 #include <stdio.h>
@@ -523,7 +523,7 @@ typedef union type
   
 #### ***数据记录与可视化***  
 1.性能数据csv格式  
-![]()  
+![](photograph/p22.png)  
   
 2.不同算法时间复杂度分析  
 1) ***冒泡排序***  
@@ -547,10 +547,69 @@ typedef union type
 时间复杂度:  
 斐波那契堆的插入操作的时间复杂度是O(1)，合并（union）操作的时间复杂度是O(1)，  
 最小元素提取操作的时间复杂度是O(log n)，因此，如果使用斐波那契堆进行排序，总体的时间复杂度是O(n log n)。  
+#### ***绘制矢量图***  
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# 设置字体，确保支持中文
+plt.rcParams['font.sans-serif'] = ['Microsoft Yahei']
+
+# 读取Excel文件
+df = pd.read_excel('python_data.xlsx')
+print(df.head())
+
+# 获取DataFrame的数值数据
+data = df.values
+print(data)
+
+# 提取三列数据
+y1 = data[:, 0:1]
+y2 = data[:, 1:2]
+y3 = data[:, 2:3]
+print("y1\n", y1)
+print("y2\n", y2)
+print("y3\n", y3)
+
+# 绘制折线图
+plt.figure()
+plt.plot(y1.flatten(), color='r', marker='+', label='bubble')
+plt.plot(y2.flatten(), color='b', marker='o', label='heap')
+plt.plot(y3.flatten(), color='g', marker='v', label='fibheap')
+
+# 添加图例、标签和标题
+plt.legend()
+plt.xlabel('opt')
+plt.ylabel('time/s')
+plt.title('可视化数据')
+
+# 保存图形为PNG文件
+plt.savefig('visualization.png', dpi=300)  # 可以指定dpi以提高图像质量
+
+# 显示图形
+plt.show()
+```
+**如图**  
+![](photograph/p23.png)  
+
+### **遇到的问题与解决方案**
+1.斐波那契堆排序有点复杂，短时间内无法彻底里掌握，故借鉴HowXu的源码+AI  后续打算加深理解并掌握，  
+毕竟斐波那契堆排序还是特别快的！  
+2.使用python绘制矢量图展示和对比数据 没接触过python 借助AI之力绘制了折线图  
+3.我的bubble_sort算法优化很差，导致只能流畅跑1w左右数据， 后续通过AI解决  
+
+### 引用/借鉴（十分感谢）  
+>HowXu  
+>wwb-cloud  
+>向日葵  
+>kimi  
+>ChatGPT  
 
 
-
-
+## 写在后面的话  
+>有点小拖延，加上最近在学其他的内容，而且我看错时间以为27号是deadline 所以23号才开始实验（麻了）  
+>时间虽然紧张但是我确实是认真学习并完成实验 **[是对编程的兴趣和对加入CSCC的渴望一直激励着我（bushi]**  
+>虽然但是，我确实在deadline之前完成了实验，我的编程之路也还在脚下！  
 
 
 
