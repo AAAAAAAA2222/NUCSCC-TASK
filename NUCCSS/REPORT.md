@@ -52,27 +52,27 @@ Q：834295215
 ##  正式开始
 #### 实验环境搭建  
 1.下载VMware和ubuntu 系统镜像  
-![](./photograph/p4.png)  
-![](./photograph/p3.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b0615c7f55.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b06163f853.png)  
 
 2.配置ubuntu  
-![](./photograph/p9.png)  
-![](./photograph/p8.png)
+![](https://www.helloimg.com/i/2024/10/25/671b061db8d70.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b06165abc4.png)
 
 3.配置gcc  
-![](./photograph/p7.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b0615f2cee.png)  
 
 4.在Firefox中官网下载vscode  
-![](./photograph/p6.png)
+![](https://www.helloimg.com/i/2024/10/25/671b061701a95.png)
 
 5.在vscode中搭建编译c语言环境  
   1)配置task.json
-![](./photograph/p13.png)  
-![](./photograph/p14.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b061e21306.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b061e2f3a1.png)  
 
   2）配置launch.json
-![](./photograph/p11.png)
-![](./photograph/p10.png)
+![](https://www.helloimg.com/i/2024/10/25/671b061e5c4cb.png)
+![](https://www.helloimg.com/i/2024/10/25/671b061e67a25.png)
   
 #### 实现排序算法  
 1.**冒泡排序**    
@@ -511,20 +511,20 @@ typedef union type
 
 #### ***编译与性能测试***  
 1.编写测试脚本(遍历所有gcc优化可选项目)
-![](photograph/p15.png)  
-![](photograph/p16.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b061e65a63.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b061e57e67.png)  
 
 2.记录各优化等级下的排序算法性能表现（执行时间）
 1)bubble **(注 bubble排序性能过差，懒得等测试运行结束了（也可能是卡死了）我只测试了10000组数据)**  
-![](photograph/p17.png)
+![](https://www.helloimg.com/i/2024/10/25/671b0803f33a7.png)
 2)heap **(1000000组数据)**  
-![](photograph/p18.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b061e57e67.png)  
 3)fib_heap **(1000000组数据)**    
-![](photograph/p19.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b0803e4d0e.png)  
   
 #### ***数据记录与可视化***  
 1.性能数据csv格式  
-![](photograph/p22.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b080331f26.png)  
   
 2.不同算法时间复杂度分析  
 1) ***冒泡排序***  
@@ -591,7 +591,7 @@ plt.savefig('visualization.png', dpi=300)  # 可以指定dpi以提高图像质�
 plt.show()
 ```
 **如图**  
-![](photograph/p23.png)  
+![](https://www.helloimg.com/i/2024/10/25/671b0803de198.png)  
 
 ### **遇到的问题与解决方案**
 1.斐波那契堆排序有点复杂，短时间内无法彻底里掌握，故借鉴HowXu的源码+AI  后续打算加深理解并掌握，  
